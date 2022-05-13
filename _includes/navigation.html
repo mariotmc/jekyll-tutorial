@@ -1,0 +1,7 @@
+<nav class="pb-2">
+    {% for item in site.data.navigation %}
+        <a href="{{item.link}}" {% if page.url == item.link %}class="text-green-500 underline"{% endif %}>
+            {{item.name}}
+        </a>
+    {% endfor %}
+</nav>
